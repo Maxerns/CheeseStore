@@ -1,0 +1,457 @@
+/* basket.css */
+
+#checkoutList {
+    max-width: 400px;
+    margin: 0 auto;
+    /* display: none; Remove this line */
+}
+
+#checkoutForm {
+    max-width: 400px;
+    margin: 0 auto;
+    display: none; /* Hide the form initially */
+}
+
+input[type=text], input[type=email], input[type=tel], input[type=number], select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.inline-list li {
+    display: inline-block;
+    margin-right: 3rem; /* Adjust as needed */
+    margin: 0.75em;
+}
+
+.item-wrapper {
+    margin-bottom: 50px; /* Adjust as needed */
+}
+
+/* Media Queries for Different Devices */
+
+/* Extra Small Devices (Phones) */
+@media only screen and (max-width: 576px) {
+    #checkoutList, #checkoutForm {
+        max-width: 100%;
+    }
+}
+
+/* Small Devices (Tablets) */
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+    #checkoutList, #checkoutForm {
+        max-width: 600px;
+    }
+}
+
+/* Medium Devices (Laptops, Desktops) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    #checkoutList, #checkoutForm {
+        max-width: 800px;
+    }
+}
+
+/* Large Devices (Large Desktops, TVs) */
+@media only screen and (min-width: 993px) {
+    #checkoutList, #checkoutForm {
+        max-width: 1000px;
+    }
+}
+
+
+
+/* adminView.css */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("../../../CheeseStore/public/src/Background.jpg");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+form {
+    width: 100%;
+    margin: 20px 0;
+}
+
+form input[type="text"], form input[type="number"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+form button:hover {
+    opacity: 0.8;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #45a049;
+}
+
+/* Media Queries */
+
+/* Extra small devices (phones, 480px and down) */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+    table {
+        font-size: 10px;
+    }
+
+    form input[type="text"],
+    form input[type="number"] {
+        font-size: 12px;
+    }
+
+    form button {
+        font-size: 14px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 481px to 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    form input[type="text"],
+    form input[type="number"] {
+        font-size: 14px;
+    }
+
+    form button {
+        font-size: 16px;
+    }
+}
+
+/* Medium devices (landscape tablets, 769px to 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    
+}
+
+/* Large devices (laptops/desktops, 1025px and up) */
+@media screen and (min-width: 1025px) {
+    
+}
+
+/* productView.css */
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("../../../CheeseStore/public/src/Background.jpg");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    overflow-y: auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* Sidebar Toggle Icon Styles */
+/* .fa-solid {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    color: #ffd780;
+    cursor: pointer;
+} */
+
+/* User and Basket Icon Styles */
+.user-link,
+.basket-link {
+    position: absolute;
+    top: 20px;
+    right: 100px;
+    color: #ffd780;
+    font-size: 24px;
+    text-decoration: none;
+    margin: 20px;
+}
+
+.basket-link {
+    right: 60px;
+}
+
+/* Logo Styles */
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-width: 200px;
+    height: auto;
+}
+
+/* Carousel Styles */
+.carousel-container {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+    width: 200px;
+    height: 150px;
+    margin-right: 10px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: white;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+h1 {
+    color: white;
+}
+
+/* Media queries for different devices */
+
+/* Mobile devices */
+@media only screen and (max-width: 767px) {
+    .carousel-slide img {
+        width: 100%;
+    }
+}
+
+/* Tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .carousel-slide img {
+        width: 50%;
+    }
+}
+
+/* Desktops and larger screens */
+@media only screen and (min-width: 1024px) {
+    .carousel-slide img {
+        width: 33.33%;
+    }
+}
+
+/* login.css */
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+/* Media Queries for different devices */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    form {
+        max-width: 100%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    form {
+        max-width: 400px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    form {
+        max-width: 600px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    form {
+        max-width: 800px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    form {
+        max-width: 1000px;
+    }
+}
+
+/* orderView.css */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("../../../CheeseStore/public/src/Background.jpg");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+form {
+    width: 100%;
+    margin: 20px 0;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+form button:hover {
+    opacity: 0.8;
+}
+/* Media Queries for Different Devices */
+
+/* Extra Small Devices (Phones) */
+@media only screen and (max-width: 576px) {
+    /* Add your CSS styles for extra small devices here */
+}
+
+/* Small Devices (Tablets) */
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+    /* Add your CSS styles for small devices here */
+}
+
+/* Medium Devices (Laptops, Desktops) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    /* Add your CSS styles for medium devices here */
+}
+
+/* Large Devices (Large Laptops, Desktops) */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    /* Add your CSS styles for large devices here */
+}
+
+/* Extra Large Devices (Large Desktops, TVs) */
+@media only screen and (min-width: 1201px) {
+    /* Add your CSS styles for extra large devices here */
+}

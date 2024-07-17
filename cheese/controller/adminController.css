@@ -1,0 +1,116 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("../../../CheeseStore/public/src/Background.jpg");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+form {
+    width: 100%;
+    margin: 20px 0;
+}
+
+form input[type="text"], form input[type="number"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+form button:hover {
+    opacity: 0.8;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #45a049;
+}
+
+/* Media Queries */
+
+/* Extra small devices (phones, 480px and down) */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+    table {
+        font-size: 10px;
+    }
+
+    form input[type="text"],
+    form input[type="number"] {
+        font-size: 12px;
+    }
+
+    form button {
+        font-size: 14px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 481px to 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    form input[type="text"],
+    form input[type="number"] {
+        font-size: 14px;
+    }
+
+    form button {
+        font-size: 16px;
+    }
+}
+
+/* Medium devices (landscape tablets, 769px to 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    
+}
+
+/* Large devices (laptops/desktops, 1025px and up) */
+@media screen and (min-width: 1025px) {
+    
+}

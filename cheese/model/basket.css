@@ -1,0 +1,74 @@
+#checkoutList {
+    max-width: 400px;
+    margin: 0 auto;
+    /* display: none; Remove this line */
+}
+
+#checkoutForm {
+    max-width: 400px;
+    margin: 0 auto;
+    display: none; /* Hide the form initially */
+}
+
+input[type=text], input[type=email], input[type=tel], input[type=number], select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.inline-list li {
+    display: inline-block;
+    margin-right: 3rem; /* Adjust as needed */
+    margin: 0.75em;
+}
+
+.item-wrapper {
+    margin-bottom: 50px; /* Adjust as needed */
+}
+
+/* Media Queries for Different Devices */
+
+/* Extra Small Devices (Phones) */
+@media only screen and (max-width: 576px) {
+    #checkoutList, #checkoutForm {
+        max-width: 100%;
+    }
+}
+
+/* Small Devices (Tablets) */
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+    #checkoutList, #checkoutForm {
+        max-width: 600px;
+    }
+}
+
+/* Medium Devices (Laptops, Desktops) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    #checkoutList, #checkoutForm {
+        max-width: 800px;
+    }
+}
+
+/* Large Devices (Large Desktops, TVs) */
+@media only screen and (min-width: 993px) {
+    #checkoutList, #checkoutForm {
+        max-width: 1000px;
+    }
+}

@@ -1,0 +1,135 @@
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("../../../CheeseStore/public/src/Background.jpg");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+/* User and Basket Icon Styles */
+.user-link,
+.basket-link {
+    position: absolute;
+    top: 20px;
+    right: 100px;
+    color: #ffd780;
+    font-size: 24px;
+    text-decoration: none;
+    margin: 20px;
+}
+
+.basket-link {
+    right: 60px;
+}
+
+ #sidebarToggle {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    color: #ffd780;
+    font-size: 24px;
+    text-decoration: none;
+    margin: 20px;
+} 
+
+/* Logo Styles */
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-width: 200px;
+    height: auto;
+}
+
+/* Carousel Styles */
+.carousel-container {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+    width: 200px;
+    height: 150px;
+    margin-right: 10px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: white;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+h1 {
+    color: white;
+}
+
+/* Media queries for different devices */
+
+/* Mobile devices */
+@media only screen and (max-width: 767px) {
+    .carousel-slide img {
+        width: 100%;
+        height: 100px; 
+    }
+
+    
+    body {
+        font-size: 14px;
+    }
+
+    
+    .logo {
+        max-width: 150px;
+    }
+}
+
+/* Tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .carousel-slide img {
+        width: 50%;
+        height: 125px; 
+    }
+
+    
+    body {
+        font-size: 16px;
+    }
+
+    
+    .logo {
+        max-width: 175px;
+    }
+}
+
+/* Desktops and larger screens */
+@media only screen and (min-width: 1024px) {
+    .carousel-slide img {
+        width: 33.33%;
+        height: 150px; 
+    }
+
+    body {
+        font-size: 18px;
+    }
+
+    
+    .logo {
+        max-width: 200px;
+    }
+}

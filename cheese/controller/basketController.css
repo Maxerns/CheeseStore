@@ -1,0 +1,128 @@
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("../../../CheeseStore/public/src/Background.jpg");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+a {
+    display: inline-block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+h1 {
+    margin-top: 0;
+    color: white;
+}
+
+label {
+    color: white;
+}
+
+li {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+.inline-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.inline-list li {
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.remove-button {
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.checkoutForm {
+    margin-top: 20px;
+    display: none; /* Initially hide the checkout form */
+}
+
+.checkoutForm label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.checkoutForm input,
+.checkoutForm textarea {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#checkoutButton {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#showCheckoutFormButton {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    /* Styles for tablets and smaller devices */
+    .sidebar {
+        width: 100px;
+    }
+    
+    .sidebar.open {
+        transform: translateX(-100px);
+    }
+    
+    .user-link,
+    .basket-link {
+        font-size: 20px;
+    }
+    
+    .basket-link {
+        right: 40px;
+    }
+    
+    .logo {
+        max-width: 150px;
+    }
+    
+    .content {
+        margin-left: 120px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* Styles for mobile devices */
+    .sidebar {
+        display: none;
+    }
+    
+    .content {
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap");
+
+/* Default styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("../../CheeseStore/public/src/Background.jpg");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;   
+}
+
+h1 {
+    font-weight: 400;
+    /* letter-spacing: 0.1rem; */
+}
+
+.logo-container {
+    transform: scale(0.8);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.logo {
+    margin: 10px auto 0; 
+    display: block; 
+}
+
+.navbar {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    padding: 50px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 75px;
+}
+
+.navbar ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: 100;
+    padding: 0px;
+    font-family: 'Neonderthaw', sans-serif;
+    color: #ffd780;
+    text-shadow:
+      0 0 7px rgb(255, 215, 128, 0.5),
+      0 0 10px rgb(255, 215, 128, 0.5),
+      0 0 21px rgb(255, 215, 128, 0.5),
+      0 0 42px rgb(255, 215, 128, 0.5),
+      0 0 82px rgb(255, 215, 128, 0.5),
+      0 0 92px rgb(255, 215, 128, 0.5),
+      0 0 102px rgb(255, 215, 128, 0.5),
+      0 0 151px rgb(255, 215, 128, 0.5);
+    animation: pulsate 0.11s ease-in-out infinite alternate; 
+}
+
+.navbar ul li a:hover {
+    cursor: pointer;
+}
+
+@keyframes pulsate {
+    100% {
+        text-shadow:
+        0 0 4px rgb(255, 215, 128, 0.5),
+        0 0 11px rgb(255, 215, 128, 0.5),
+        0 0 19px rgb(255, 215, 128, 0.5),
+        0 0 40px #ffd780,
+        0 0 80px #ffd780,
+        0 0 90px #ffd780,
+        0 0 100px #ffd780,
+        0 0 150px #ffd780;
+    }
+    
+    0% {
+        text-shadow:
+        0 0 4px rgb(255, 215, 128, 0.5),
+        0 0 10px rgb(255, 215, 128, 0.5),
+        0 0 18px rgb(255, 215, 128, 0.5),
+        0 0 38px #ffd780,
+        0 0 73px #ffd780,
+        0 0 80px #ffd780,
+        0 0 94px #ffd780,
+        0 0 140px #ffd780;
+    }
+}
+
+footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    opacity: 25%;
+    font-style: italic;
+    top: 50px;
+}
+
+/* Media queries for different devices */
+@media only screen and (max-width: 768px) {
+    .logo-container {
+        transform: scale(0.6);
+    }
+    
+    .navbar ul li a {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .logo-container {
+        transform: scale(0.4);
+    }
+    
+    .navbar ul li a {
+        font-size: 18px;
+    }
+}
